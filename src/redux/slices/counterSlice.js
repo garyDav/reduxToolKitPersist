@@ -16,5 +16,5 @@ export const counterSlice = createSlice({
 })
 
 export const { incCounter } = counterSlice.actions
-export const selectCounter = state => state.counter
+export const selectCounter = state => state.counterState.counter
 export default counterSlice.reducer
