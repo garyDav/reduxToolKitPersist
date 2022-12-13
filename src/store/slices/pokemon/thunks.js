@@ -16,6 +16,6 @@ export const getPokemons = (page = 0) => {
     )
     console.log(data)
 
-    dispatch(setPokemons({ pokemons: data.results, page: data.next }))
+    dispatch(setPokemons({ pokemons: data.results, page: page + 1 }))
   }
 }
